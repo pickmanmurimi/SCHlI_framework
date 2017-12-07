@@ -18,6 +18,5 @@ $routes = new RouteCollection();
 add your routes here
 -----------------------
 */
-
-$routes->add('/foo', new Route('/foo', array('_controller' => 'pagesController::index')));
-$routes->add('/bar', new Route('/bar/{name}', array('_controller'=>'pagesController::home','name' => 'World')));
+$routes->add('home', new Route('/',['_controller' => 'pagesController::home','name' => 'Guest']));
+$routes->add('/bar', new Route('/home/{name}', array('_controller'=>'pagesController::home','name' => 'Guest')));

@@ -14,14 +14,14 @@ class pagesController extends Controller
 		echo "index";
 	}
 
-    public function welcome()
+    public function welcome($name)
     {
-        self::view('client/index',['name' => 'method 1 to set variables',]);
+        return $this->view('client/pages/home',['name'=>$name]);
     }
 
     public function home($name)
     {
-    	echo $name . " you are at the home page";
+        return $this->view('client/pages/home',['name'=>$name]);
     }
 
 }

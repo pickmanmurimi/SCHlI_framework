@@ -14,16 +14,6 @@ class Controller {
 	*/
 	public static function view($view,$parameters = []){
 
-		$routeArguments = routeService::argumentsPartVarName(Route::$currentRoute);
-		$urlArguments	= routeService::urlArgument();
-
-		if ($routeArguments != NULL) {
-			
-			foreach ($routeArguments as $key => $value) {
-				${ $value } = $urlArguments[$key];
-			}
-		}
-
 		if (file_exists(TEMPLATES['views'] . $view . '.php')) {
 			foreach ($parameters as $key => $value) {
 			

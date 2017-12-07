@@ -6,7 +6,7 @@
     RewriteCond %{REQUEST_FILENAME} !-l
 
         
-    RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+    RewriteRule ^(.*)$ index.php [QSA,PT,L]
 
     </IFModule>
 
