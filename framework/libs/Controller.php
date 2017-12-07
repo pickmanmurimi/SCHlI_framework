@@ -3,8 +3,8 @@
  *this class defines basic controller functions
  ----------------------------------------------
 */
- /*sets the parameters to be passed to the view
-@param parameters in an array
+ /*sets the arguments to be passed to the view
+@param arguments in an array
 @return */
 
 class Controller {
@@ -12,16 +12,15 @@ class Controller {
 	/*makes the views
 	* @param view
 	*/
-	public static function view($view,$parameters = []){
+	public static function view($view,$arguments = []){
 
 		if (file_exists(TEMPLATES['views'] . $view . '.php')) {
-			foreach ($parameters as $key => $value) {
+
+
+			extract($arguments, EXTR_PREFIX_SAME, "SCHlI");
 			
-				${ $key } = $value;
-			}
-
-
 			require_once(TEMPLATES['views'] . $view . '.php');
+		
 		}else{
 			/*404 errer page*/
 			require_once(TEMPLATES['views']. 'client/pages/error404.php');
