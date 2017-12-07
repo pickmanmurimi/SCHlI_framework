@@ -36,7 +36,9 @@ class bootstrap
 		// database connection
 		require_once ( SCHlI_FRAMEWORK . 'database' . DIRECTORY_SEPARATOR .'connection.php');
 		//router
-		require_once (SCHlI_ROUTES_URL . 'routeTest.php');
+		require_once (SCHlI_ROUTES_URL . 'webRoutes.php');
+		//routeService matching
+		require_once ( SCHlI_SERVICES . 'routeService.php');
 
 	}
 
