@@ -14,11 +14,6 @@ class pagesController extends Controller
 		echo "index";
 	}
 
-    public function welcome($name)
-    {
-        return $this->view('client/pages/home',['name'=>$name]);
-    }
-
     public function home($name)
     {
         return $this->view('client/pages/home',['name'=>$name]);

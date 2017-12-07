@@ -6,9 +6,6 @@
  * Time: 11:57 PM
  */
 
-namespace benign\controller;
-
-
 class auth
 {
 
