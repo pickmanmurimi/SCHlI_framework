@@ -1,0 +1,21 @@
+    <IfModule mod_rewrite.c>
+    RewriteEngine On
+
+   	php_value short_open_tag 1
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
+
+        
+    RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+
+    </IFModule>
+
+#.htaccess from heropoo
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+#RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+
+#</IfModule>
