@@ -20,3 +20,4 @@ add your routes here
 */
 $routes->add('home', new Route('/',['_controller' => 'pagesController::home','name' => 'Guest']));
 $routes->add('/bar', new Route('/home/{name}', array('_controller'=>'pagesController::home','name' => 'Guest')));
+$routes->add('index', new Route('/index',['_controller' => 'pagesController::index']));

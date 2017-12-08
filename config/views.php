@@ -1,7 +1,7 @@
 <?php
 /*
            |-------------------------------------------------------|
-           |           * * SCHlI 1.1.x -  * improved *           |
+           |           * * SCHlI 1.1.x -  * improved *             |
            |-------------------------------------------------------|
 
 
@@ -17,7 +17,7 @@
 		the values below hold the paths for the theme base
 		*you can easily alter the default template base by defining
 		the path for your new template.
-		CHANGE THE 'view' VALUE TO DEFINE YOUR NEW PATH
+		CHANGE THE 'views' VALUE TO DEFINE YOUR NEW PATH
 		-----------------------------------------------------------
 		PLACE YOUR TEMPLATES UNDER THE RESOURCES FOLDER
 		-----------------------------------------------------------
